@@ -1,0 +1,27 @@
+{
+  "name": "easy-ajax",
+  "version": "1.0.0-final.1512141736",
+  "description": "Simple wrapper functions for XMLHttpRequest.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iiyo/easy-ajax.git"
+  },
+  "keywords": [
+    "ajax",
+    "xmlhttprequest",
+    "request"
+  ],
+  "author": "J. Steinbeck <mail@steinbeck.it>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/iiyo/easy-ajax/issues"
+  },
+  "homepage": "https://github.com/iiyo/easy-ajax#readme"
+}
