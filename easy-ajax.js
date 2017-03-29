@@ -42,6 +42,16 @@
             };
         }
         
+        if (options.before === "function") {
+            options.before(requestObject);
+        }
+        
+        if (options.headers && typeof options.headers === "object") {
+            Object.keys(options.headers).forEach(function (key) {
+                requestObject.setRequestHeader(key, options.headers[key]);
+            });
+        }
+        
         requestObject.onreadystatechange = function() {
             
             var done, statusOk;
@@ -101,6 +111,8 @@
             then = options;
             options = {};
         }
+        
+        options = options || {};
         
         options.data = data;
         

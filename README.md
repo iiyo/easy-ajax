@@ -36,6 +36,10 @@ var requestObject = ajax.post(url, data, then);
   * `timeout`: Timeout in ms.
   * `data`: Data to send (when POSTing).
   * `randomize`: Add a random query string to prevent caching?
+  * `before`: A function to call after opening and before sending the request; called with
+    the XMLHttpRequest object as the first argument.
+  * `headers`: A hash object with additional headers to set; the keys are the header names,
+    the values the values to set for the header.
 * `then`: Callback for when the request is finished.
 
 
